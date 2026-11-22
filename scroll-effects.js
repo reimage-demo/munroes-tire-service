@@ -12,7 +12,7 @@
 
   const targets = document.querySelectorAll([
     '.visit > *', '#services > h2', '.prices', '.owner-inner > *',
-    '#photos > h2', '.gallery figure', '.reviews-heading', '.review-pair',
+    '.shop-intro', '.gallery figure', '.reviews-heading', '.review-pair',
     '.review-controls', '.faq > *', '.cta > .wrap', '.policy > *',
     '.footer-grid > *', '.footer-credit'
   ].join(', '));
