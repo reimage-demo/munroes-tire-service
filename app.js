@@ -54,3 +54,18 @@ document.addEventListener('visibilitychange', updatePlayback);
 showPair(0);
 controls.hidden = false;
 updatePlayback();
+
+const callButton = document.querySelector('.float-call');
+
+function boundedScrollY() {
+  const bottom = document.documentElement.scrollHeight - window.innerHeight;
+  return Math.max(0, Math.min(window.scrollY, bottom));
+}
+
+let previousScrollY = boundedScrollY();
+window.addEventListener('scroll', () => {
+  const currentScrollY = boundedScrollY();
+  if (currentScrollY === previousScrollY) return;
+  callButton.classList.toggle('is-hidden', currentScrollY < previousScrollY);
+  previousScrollY = currentScrollY;
+}, { passive: true });

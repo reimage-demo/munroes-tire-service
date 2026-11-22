@@ -130,6 +130,7 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 .float-call { position: fixed; right: max(16px,env(safe-area-inset-right)); bottom: max(16px,env(safe-area-inset-bottom)); z-index: 3; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: var(--yellow); color: var(--navy); border: 2px solid var(--navy); box-shadow: 0 4px 16px #09245840; }
+.float-call.is-hidden { visibility: hidden; }
 .float-call svg { width: 26px; }
 @media (prefers-reduced-motion: no-preference) {
   .float-call { animation: call-in .5s ease-out .35s backwards; }
@@ -192,10 +193,10 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
   .logo { width: 142px; }
   .bar nav { width: 100%; }
   .menu-toggle:not([hidden]) {
-    display: grid; place-items: center; width: 48px; height: 48px; padding: 10px;
-    border: 1px solid #ffffff55; border-radius: 10px; background: transparent; color: white; cursor: pointer;
+    display: grid; place-items: center; width: 48px; height: 48px; padding: 8px;
+    border: 0; background: transparent; color: white; cursor: pointer;
   }
-  .menu-toggle svg { width: 26px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+  .menu-toggle svg { width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
   .menu-toggle[aria-expanded="true"] { color: var(--yellow); }
   .menu-toggle:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
   .menu-toggle:not([hidden]) + nav {
