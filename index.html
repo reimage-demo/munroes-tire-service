@@ -7,11 +7,38 @@
   <title>Munroe’s Tire Service LLC | Hartford, CT</title>
   <meta name="description" content="New and used tires, tire repairs, mounting and balancing at 3430 Main Street in Hartford. Find Munroe’s shop hours, phone number and service prices.">
   <link rel="icon" href="assets/munroes-logo.webp">
+  <script src="navigation.js" defer></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head><body id="top"><a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap bar"><a class="logo" href="#top" aria-label="Munroe’s Tire Service home"><img src="assets/munroes-logo-original.png" width="1774" height="887" alt="Munroe’s Tire Service LLC"></a><nav aria-label="Main navigation"><a href="#visit">Visit</a><a href="#services">Tire services</a><a href="#owner">Meet the owner</a><a href="#photos">Photos</a></nav></div></header>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Munroe’s Tire Service home">
+      <svg viewBox="30 32 428 184" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="header-ink" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0 0 0 0 1   0 0 .3 0 .86   0 0 2 0 0   -1.1 0 0 0 1"/>
+            <feComposite in2="SourceGraphic" operator="in"/>
+          </filter>
+        </defs>
+        <image href="assets/munroes-logo-original.png" width="480" height="240" filter="url(#header-ink)"/>
+      </svg>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Main menu" aria-controls="main-nav" aria-expanded="false" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20M2 12h20M2 19h20"/></svg>
+    </button>
+    <nav id="main-nav" aria-label="Main navigation">
+        <a href="#visit">Visit</a>
+        <a href="#services">Tire services</a>
+        <a href="#owner">Meet the owner</a>
+        <a href="#photos">Photos</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQs</a>
+    </nav>
+  </div>
+</header>
 <main id="main">
-<section class="hero"><div class="hero-copy"><h1>New &amp; <br>used tires</h1><p>Tire repairs, mounting and balancing on Main Street.</p><a class="button" href="#services">View services &amp; prices</a></div><img class="building" fetchpriority="high" src="assets/photos/storefront.webp" alt="Munroe’s service bays on Main Street"></section>
+<section class="hero"><div class="hero-copy"><h1>New &amp; <br>used tires</h1><p>Tire repairs, mounting and balancing on Main Street.</p><a class="button" href="#services">View services &amp; prices</a></div><img class="building" fetchpriority="high" src="assets/photos/storefront.webp" alt="Open service bays at Munroe’s Tire Service, 3430 Main Street in Hartford, Connecticut"></section>
 <section class="wrap visit" id="visit"><div><h2>Visit Munroe’s</h2><address><a href="https://www.google.com/maps/dir/?api=1&amp;destination=3430+Main+Street+Hartford+CT+06120">3430 Main Street<br>Hartford, CT 06120</a><a href="tel:+18602460886">(860) 246-0886</a></address><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;destination=3430+Main+Street+Hartford+CT+06120">Get directions</a></div><table><caption>Opening hours</caption><tbody><tr><th scope="row">Monday</th><td>8 AM – 6 PM</td></tr>
 <tr><th scope="row">Tuesday</th><td>8 AM – 6 PM</td></tr>
 <tr><th scope="row">Wednesday</th><td>8 AM – 6 PM</td></tr>
@@ -32,7 +59,7 @@
           <tr><th scope="row">14–17 inches</th><td>$15</td></tr>
           <tr><th scope="row">Larger sizes through 22 inches</th><td>$20</td></tr>
         </tbody>
-      </table><a class="board-link" href="assets/photos/service-board.webp">View the shop’s price board</a></div><div><table class="prices">
+      </table></div><div><table class="prices">
         <caption>Tire service</caption>
         <tbody>
           <tr><th scope="row">Air pressure check</th><td>Free</td></tr>
@@ -47,7 +74,119 @@
           <tr><th scope="row">Tire rotation</th><td>$20 and up</td></tr>
         </tbody>
       </table></div></div></section>
-<section id="owner" class="owner"><div class="wrap owner-inner"><img loading="lazy" src="assets/photos/owner.webp" alt="Munroe’s owner outside the service bay"><div><h2>Meet the owner</h2><p>After 18 years in the tire business, the owner of Munroe’s moved the shop to 3430 Main Street in Hartford.</p></div></div></section>
-<section id="photos" class="wrap block"><h2>Around the shop</h2><div class="gallery"><figure><img loading="lazy" src="assets/photos/roadside-sign.webp" alt="Yellow Munroe’s sign beside Main Street"><figcaption>The Main Street sign</figcaption></figure><figure><img loading="lazy" src="assets/photos/waiting-room.webp" alt="Tires and wheels beside the shop’s red and black checkered floor"><figcaption>Inside the shop</figcaption></figure><figure><img loading="lazy" src="assets/photos/shop-yard.webp" alt="Wide view of the shop yard and service bays"><figcaption>The service yard</figcaption></figure></div></section>
+<section id="owner" class="owner" aria-labelledby="owner-title">
+  <div class="wrap owner-inner">
+    <img loading="lazy" src="assets/photos/owner-portrait.webp" alt="The owner of Munroe’s Tire Service wearing a cap, sunglasses and work gloves">
+    <div class="owner-story">
+      <h2 id="owner-title">Meet the owner</h2>
+      <p>I spent 18 years in the tire business before I moved Munroe’s to 3430 Main Street in Hartford. If it’s your first time coming by, look for the yellow sign above the bay. That’s us.</p>
+      <p>Maybe you’ve put air in the same tire twice this week. Maybe you need a replacement and want to know what it’ll cost before payday. Those are good questions to bring through our door. We can check where a tire is leaking, explain whether it can be repaired, or walk you through new and used options in your size.</p>
+      <p>You don’t need to know the name of a part to start a conversation here. Just tell us what’s happening with your car. We’ll take it from there.</p>
+    </div>
+  </div>
+</section>
+<section id="photos" class="wrap block"><h2>Around the shop</h2><div class="gallery"><figure><img loading="lazy" src="assets/photos/roadside-sign.webp" alt="Munroe’s roadside sign above yellow banners advertising used tires, free air pressure checks and speed balancing"><figcaption>The Main Street sign</figcaption></figure><figure><img loading="lazy" src="assets/photos/waiting-room.webp" alt="Stacks of tires and a red floor jack on the red-and-black checkered floor inside the service bay"><figcaption>Inside the shop</figcaption></figure><figure><img loading="lazy" src="assets/photos/shop-yard.webp" alt="Cars parked outside the service bays beside a chain-link fence with a yellow “Quality Used Tires” banner"><figcaption>The service yard</figcaption></figure></div></section>
+<section class="reviews" id="reviews" aria-labelledby="reviews-title">
+  <div class="wrap block">
+    <div class="reviews-heading">
+      <div>
+        <h2 id="reviews-title">Featured five-star reviews</h2>
+        <p>Overall Google rating: <strong>4.8 out of 5</strong></p>
+      </div>
+      <a href="https://www.google.com/maps/place/Munroe%27s+Tire+%26+Automotive+Services/data=!4m8!3m7!1s0x89e655e839b91cf5:0x6448f5f448b3dc6!8m2!3d41.7981686!4d-72.6622051!9m1!1b1!16s%2Fg%2F11f7n4s5zx">Read all reviews on Google</a>
+    </div>
+    <div class="review-pair">
+      <figure class="review-card">
+        <span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“in and out quick”</blockquote>
+        <figcaption><a href="https://maps.app.goo.gl/TvkeM7FaANcStVN56" aria-label="Read edwin morales’s review on Google">edwin morales</a></figcaption>
+      </figure>
+      <figure class="review-card">
+        <span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“Hartford Main Street! Very professional.”</blockquote>
+        <figcaption><a href="https://maps.app.goo.gl/TfURrHdAK39JLzJx7" aria-label="Read Andrew Ford’s review on Google">Andrew Ford</a></figcaption>
+      </figure>
+      <figure class="review-card">
+        <span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“I Will Come Here For Tires Anytime!”</blockquote>
+        <figcaption><a href="https://maps.app.goo.gl/CuKVcpx6AjmTj94G8" aria-label="Read Tommy Smilez’s review on Google">Tommy Smilez</a></figcaption>
+      </figure>
+      <figure class="review-card">
+        <span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“the right tires at a good price.”</blockquote>
+        <figcaption><a href="https://maps.app.goo.gl/h72yzoQDojMRec5s8" aria-label="Read HotPink860’s review on Google">HotPink860</a></figcaption>
+      </figure>
+    </div>
+    <div class="review-controls" hidden>
+      <button type="button" data-step="-1" aria-label="Previous pair"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+      <output aria-label="Review pair" aria-live="off"></output>
+      <button type="button" data-step="1" aria-label="Next pair"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></button>
+      <button type="button" data-toggle>Pause</button>
+    </div>
+  </div>
+</section>
+<section class="wrap block faq" id="faq" aria-labelledby="faq-title">
+  <h2 id="faq-title">Frequently asked questions</h2>
+  <details>
+    <summary>Do you have used tires in my size?</summary>
+    <p>We carry new and used tires. <a href="tel:+18602460886">Call us at (860) 246-0886</a> with the size printed on the side of your tire, like 205/55R16, and we’ll check what we have.</p>
+  </details>
+  <details>
+    <summary>How much does a replacement tire cost?</summary>
+    <p>Our tires start at $50 for 14–16-inch wheels, $60 for 17–19-inch wheels and $80 for 20–22-inch wheels. Give us your tire size and we’ll quote you a price with installation.</p>
+  </details>
+  <details>
+    <summary>Can you fix a flat tire?</summary>
+    <p>Yes. We’ll check where your tire is leaking and let you know if we can repair it. If it needs a plug, we charge $20.</p>
+  </details>
+  <details>
+    <summary>Can you mount and balance my tires?</summary>
+    <p>Yes. We charge $15 to mount a tire on a 14–17-inch wheel and $20 for larger wheels up to 22 inches. We also offer <a href="#services">speed balancing</a> for $15.</p>
+  </details>
+  <details>
+    <summary>How long should I plan for a tire change?</summary>
+    <p>It depends on how many tires you need changed and how busy we are. Give us a call before you head over and we’ll tell you what kind of wait to expect.</p>
+  </details>
+</section>
 <section class="cta"><div class="wrap"><h2>Need a tire?</h2><p>Call the shop to check your tire size and today’s availability.</p><a class="button" href="tel:+18602460886">Call (860) 246-0886</a></div></section>
-</main><footer><div class="wrap foot"><b>Munroe’s Tire Service LLC</b><div class="legal-links"><a href="terms.html">Terms of use</a><a href="ftc-disclosure.html">FTC disclosure</a></div><p>Powered by <a href="https://reimagebs.com/">Reimage Business Solutions</a></p></div></footer><a class="float-call" href="tel:+18602460886" aria-label="Call Munroe’s Tire Service at (860) 246-0886"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/></svg></a></body></html>
+</main><footer class="site-footer">
+  <div class="wrap foot">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="Munroe’s Tire Service home">
+          <svg viewBox="30 32 428 184" aria-hidden="true" focusable="false"><image href="assets/munroes-logo-original.png" width="480" height="240" filter="url(#header-ink)"/></svg>
+        </a>
+        <p>New and used tires<br>in Hartford, Connecticut.</p>
+      </div>
+      <nav class="footer-column" aria-label="Footer navigation">
+        <h2>Find your way</h2>
+        <a href="#top">Home</a>
+        <a href="#visit">Visit</a>
+        <a href="#services">Tire services</a>
+        <a href="#owner">Meet the owner</a>
+        <a href="#photos">Photos</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <div class="footer-column">
+        <h2>Visit the shop</h2>
+        <address><a href="https://www.google.com/maps/dir/?api=1&amp;destination=3430+Main+Street+Hartford+CT+06120">3430 Main Street<br>Hartford, CT 06120</a><a href="tel:+18602460886">(860) 246-0886</a></address>
+      </div>
+      <div class="footer-column">
+        <h2>Find us on Google</h2>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3430+Main+Street+Hartford+CT+06120">Get directions</a>
+        <a href="https://www.google.com/maps/place/Munroe%27s+Tire+%26+Automotive+Services/data=!4m8!3m7!1s0x89e655e839b91cf5:0x6448f5f448b3dc6!8m2!3d41.7981686!4d-72.6622051!9m1!1b1!16s%2Fg%2F11f7n4s5zx">Read our reviews</a>
+      </div>
+    </div>
+    <div class="footer-credit">
+      <p>© 2026 Munroe’s Tire Service LLC</p>
+      <p>Powered by <a href="https://reimagebs.com/">Reimage Business Solutions</a></p>
+    </div>
+    <nav class="legal-links" aria-label="Website policies">
+      <a href="terms.html">Terms of use</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="ftc-disclosure.html">FTC disclosure</a>
+      <a href="accessibility.html">Accessibility</a>
+    </nav>
+  </div>
+</footer><a class="float-call" href="tel:+18602460886" aria-label="Call Munroe’s Tire Service at (860) 246-0886"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/></svg></a></body></html>
