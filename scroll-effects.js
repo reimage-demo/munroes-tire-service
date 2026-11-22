@@ -14,7 +14,7 @@
     '.visit > *', '#services > h2', '.prices', '.owner-inner > *',
     '#photos > h2', '.gallery figure', '.reviews-heading', '.review-pair',
     '.review-controls', '.faq > *', '.cta > .wrap', '.policy > *',
-    '.footer-grid > *', '.footer-credit', '.legal-links'
+    '.footer-grid > *', '.footer-credit'
   ].join(', '));
 
   targets.forEach(element => {
