@@ -232,7 +232,7 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
 }
 
 .hours-note { margin-top: 14px; }
-#services h3 { margin: 28px 0 12px; color: var(--navy); }
+#replacement-process { margin: 44px 0 16px; color: var(--navy); }
 .replacement-steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
@@ -244,3 +244,27 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
 }
 .replacement-steps strong { display: block; color: var(--navy); }
 .replacement-steps li::marker { color: var(--navy); font-weight: 600; }
+
+
+.step-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: #dde8f3;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .is-revealed .pick-tire { animation: pick-tire 2.4s ease-out; }
+  .is-revealed .mount-tire { animation: mount-tire 2.4s ease-in-out both; }
+  .is-revealed .spin-wheel { animation: spin-wheel 2.4s ease-out; }
+  .is-revealed .dispose-tire { animation: dispose-tire 2.4s ease-in-out both; }
+  @keyframes pick-tire { from { transform: translateY(9px); } 55% { transform: translateY(-6px); } }
+  @keyframes mount-tire { from { transform: translateY(-10px); } to { transform: translateY(5px); } }
+  @keyframes spin-wheel { from { transform: rotate(-280deg); } to { transform: rotate(0deg); } }
+  @keyframes dispose-tire {
+    from { transform: translate(-24px, 10px); }
+    55% { transform: translate(21px, -19px); }
+    to { transform: translate(42px, -3px); }
+  }
+}

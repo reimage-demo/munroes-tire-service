@@ -17,6 +17,8 @@
     '.footer-grid > *', '.footer-credit'
   ].join(', '));
 
+  document.querySelectorAll('.replacement-steps li').forEach(step => observer.observe(step));
+
   targets.forEach(element => {
     if (element.getBoundingClientRect().top <= window.innerHeight) return;
     const index = Array.prototype.indexOf.call(element.parentElement.children, element);
