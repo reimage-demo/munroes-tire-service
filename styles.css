@@ -242,6 +242,9 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
   background: #eff3fa;
   border-radius: 12px;
 }
+@media (max-width: 760px) {
+  .replacement-steps { padding-inline: 20px; }
+}
 .replacement-steps strong { display: block; color: var(--navy); }
 
 
