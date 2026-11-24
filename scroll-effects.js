@@ -17,7 +17,7 @@
     '.footer-grid > *', '.footer-credit'
   ].join(', '));
 
-  document.querySelectorAll('.replacement-steps li').forEach(step => observer.observe(step));
+  document.querySelectorAll('.replacement-steps > [role="listitem"]').forEach(step => observer.observe(step));
 
   targets.forEach(element => {
     if (element.getBoundingClientRect().top <= window.innerHeight) return;

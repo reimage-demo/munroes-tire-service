@@ -243,7 +243,6 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
   border-radius: 12px;
 }
 .replacement-steps strong { display: block; color: var(--navy); }
-.replacement-steps li::marker { content: ""; }
 
 
 .step-art {
