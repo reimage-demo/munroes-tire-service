@@ -230,3 +230,17 @@ figcaption { font-size: 1.4rem; color: var(--navy); margin-top: 8px; }
 @media (prefers-reduced-motion: reduce) {
   .scroll-reveal { opacity: 1 !important; transform: none !important; }
 }
+
+.hours-note { margin-top: 14px; }
+#services h3 { margin: 28px 0 12px; color: var(--navy); }
+.replacement-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 16px 32px;
+  padding: 20px 28px 20px 44px;
+  margin: 0;
+  background: #eff3fa;
+  border-radius: 12px;
+}
+.replacement-steps strong { display: block; color: var(--navy); }
+.replacement-steps li::marker { color: var(--navy); font-weight: 600; }
